@@ -5,9 +5,26 @@
  */
 namespace SimpleTools;
 
+/**
+ * Class Date
+ * @package SimpleTools
+ */
 class Date
 {
-    function __construct($date)
+
+    /**
+     *
+     */
+    function __construct()
+    {
+
+    }
+
+    /**
+     * @param $date
+     * @return string
+     */
+    function revertFormat($date)
     {
         $retorno = "erro";
 
@@ -24,4 +41,27 @@ class Date
 
         return $retorno;
     }
+
+    /**
+     * @return array
+     */
+    private function getMonths()
+    {
+        return [
+            null,
+            'Janeiro',
+            'Fevereiro',
+            'Março',
+            'Abril',
+            'Maio',
+            'Junho',
+            'Julho',
+            'Agosto',
+            'Setembro',
+            'Outubro',
+            'Novembro',
+            'Dezembro'
+        ];
+    }
+
 }
