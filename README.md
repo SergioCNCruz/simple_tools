@@ -7,6 +7,6 @@ Simple PHP tools to use anywhere
  - [Sérgio C. N. Cruz](https://github.com/SergioCNCruz)
 
 ##Usage
-'''
-   
-'''
+´´´
+
+´´´
