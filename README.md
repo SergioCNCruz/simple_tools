@@ -1,7 +1,12 @@
-Simple Tools
-============
+PHP Simple Tools
+================
 
-Simple tools to use anywhere
+Simple PHP tools to use anywhere
 
 ##Author
  - [Sérgio C. N. Cruz](https://github.com/SergioCNCruz)
+
+##Usage
+'''
+   
+'''
