@@ -1,6 +1,7 @@
 {
   "name":"sergiocncruz/phpsimpletools",
   "description":"Simple php tools to use anywhere ",
+  "license":"MIT",
   "authors": [
         {
             "name": "Sergio C. N. Cruz",
