@@ -2,6 +2,7 @@
   "name":"sergiocncruz/phpsimpletools",
   "description":"Simple php tools to use anywhere ",
   "license":"MIT",
+  "minimum-stability":"dev",
   "authors": [
         {
             "name": "Sergio C. N. Cruz",
