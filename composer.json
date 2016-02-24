@@ -2,7 +2,7 @@
   "name":"sergiocncruz/phpsimpletools",
   "description":"Simple php tools to use anywhere ",
   "license":"MIT",
-  "minimum-stability":"dev",
+  "minimum-stability":"stable",
   "version" : "1.0",
   "authors": [
         {
