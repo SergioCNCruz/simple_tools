@@ -3,6 +3,7 @@
   "description":"Simple php tools to use anywhere ",
   "license":"MIT",
   "minimum-stability":"dev",
+  "version" : "1.0",
   "authors": [
         {
             "name": "Sergio C. N. Cruz",
