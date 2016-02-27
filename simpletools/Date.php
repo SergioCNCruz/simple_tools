@@ -3,7 +3,10 @@
 /**
  * @Author Sérgio C. N. Cruz <me@sergiocncruz.com.br>
  */
+
 namespace SimpleTools;
+
+use Symfony\Component\Validator\Constraints\Null;
 
 /**
  * Class Date
@@ -18,6 +21,18 @@ class Date
     function __construct()
     {
 
+    }
+
+    function dataExtencion($date)
+    {
+        if(stripos($date, "-"))
+        {
+            list($ano, $mes, $dia) = explode("-", $date);
+            $m = $this->getMonths();
+            $mes = str_replace("0", "", $mes);
+            $retorno = $dia." de ".$m[$mes]." de ".$ano;
+        }
+        return $retorno;
     }
 
     /**
