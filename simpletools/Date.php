@@ -23,6 +23,10 @@ class Date
 
     }
 
+    /**
+     * @param $date
+     * @return string
+     */
     function dataExtencion($date)
     {
         if(stripos($date, "-"))
