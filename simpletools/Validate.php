@@ -42,7 +42,7 @@ class Validate
      */
     protected function url($campo, $value)
     {
-        $this->errors[] = (!filter_var($value, FILTER_VALIDATE_URL)) ? "Envie uma URL válida" : "";
+        $this->errors[] = (!filter_var($value, FILTER_VALIDATE_URL)) ? "Envie uma URL válidano campo ".$campo : "";
     }
 
     /**
@@ -51,7 +51,25 @@ class Validate
      */
     protected function email($campo, $value)
     {
-        $this->errors[] = (!filter_var($value, FILTER_VALIDATE_EMAIL)) ? "Envie um email válido" : "";
+        $this->errors[] = (!filter_var($value, FILTER_VALIDATE_EMAIL)) ? "Envie um email válido no campo ".$campo : "";
+    }
+
+    /**
+     * @param $campo
+     * @param $value
+     */
+    protected function int($campo, $value)
+    {
+        $this->errors[] = (!filter_var($value, FILTER_VALIDATE_INT)) ? "Esse valor não é um inteiro  válido no campo ".$campo : "";
+    }
+
+    /**
+     * @param $campo
+     * @param $value
+     */
+    protected function phone($campo, $value)
+    {
+        $this->errors[] = (!preg_match('/^(\(?[2-9]{1}[0-9]{2}\)?|[0-9]{3,3}[-. ]?)[ ][0-9]{3,3}[-. ]?[0-9]{4,4}$/', $value)) ? "Informe um número válido de telefone no campo ".$campo : "";
     }
 
 }
